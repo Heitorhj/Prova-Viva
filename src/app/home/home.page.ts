@@ -16,6 +16,7 @@ export class HomePage {
   numeroMatricula = '20260042';
   status = 'PENDENTE';
   dataCorrecao = new Date();
+  nota = 8;
 
   constructor() {}
 }
