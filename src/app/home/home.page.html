@@ -5,18 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>
-      Start with Ionic
-      <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
-    </p>
-    {{ numeroMatricula | matricula }}
-  </div>
+ <ion-content class="ion-padding">
+  <p>Matrícula: {{ numeroMatricula | matricula }}</p>
+  <p>Situação: {{ status | situacaoCorrecao }}</p>
+  <p>Data: {{ dataCorrecao | date:'dd/MM/yyyy' }}</p>
+  <p>Nota: {{ nota | number:'1.1-1' }}</p>
+</ion-content>
 </ion-content>
